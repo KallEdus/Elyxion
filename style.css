@@ -1,0 +1,1037 @@
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #e0d3b8;
+    overflow-x: hidden;
+    background-image:
+        radial-gradient(circle at 10% 20%, rgba(20, 15, 5, 0.1) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(40, 20, 5, 0.1) 0%, transparent 20%);
+    background-attachment: fixed;
+}
+
+/* Efeito de partículas */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+/* Cabeçalho e navegação */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 40px;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(120, 90, 40, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #c9a86a;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px rgba(201, 168, 106, 0.5);
+}
+
+.logo span {
+    color: #8b4513;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: #e0d3b8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav a:hover {
+    color: #c9a86a;
+    background: rgba(120, 90, 40, 0.1);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #c9a86a;
+    bottom: 0;
+    left: 50%;
+    transition: all 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 70%;
+    left: 15%;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(ellipse at center, rgba(10, 5, 0, 0) 0%, rgba(10, 5, 0, 0.8) 70%),
+        url('https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1794&q=80');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #c9a86a;
+    text-shadow: 0 0 20px rgba(201, 168, 106, 0.7);
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.hero h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #e0d3b8;
+    margin-bottom: 40px;
+    max-width: 800px;
+    letter-spacing: 2px;
+}
+
+.cta-button {
+    background: linear-gradient(to bottom, #8b4513, #5d2906);
+    color: #e0d3b8;
+    border: none;
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+    color: #fff;
+    background: linear-gradient(to bottom, #9a5520, #6d3108);
+}
+
+.cta-button:active {
+    transform: translateY(-2px);
+}
+
+/* Seções de conteúdo */
+section {
+    padding: 100px 40px;
+    position: relative;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #c9a86a;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background: #8b4513;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Sobre o Mundo */
+.world-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.world-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    background: rgba(20, 15, 10, 0.7);
+    border-radius: 8px;
+    padding: 30px;
+    border: 1px solid rgba(120, 90, 40, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
+}
+
+.world-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(201, 168, 106, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+}
+
+.world-card h3 {
+    color: #c9a86a;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(120, 90, 40, 0.5);
+}
+
+.world-card p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #d4c5a6;
+}
+
+/* Personagens */
+.characters-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.character-card {
+    width: 300px;
+    background: rgba(20, 15, 10, 0.7);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(120, 90, 40, 0.3);
+    transition: all 0.4s ease;
+}
+
+.character-card:hover {
+    transform: scale(1.05);
+    border-color: rgba(201, 168, 106, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+}
+
+.character-img {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.lyea {
+    background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80');
+}
+
+.kael {
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+}
+
+.elena {
+    background-image: url('https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+}
+
+.character-info {
+    padding: 25px;
+}
+
+.character-info h3 {
+    color: #c9a86a;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.character-info p {
+    color: #d4c5a6;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Tríades */
+.triads-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.triad {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    padding: 30px;
+    background: rgba(20, 15, 10, 0.7);
+    border-radius: 8px;
+    border: 1px solid rgba(120, 90, 40, 0.3);
+    transition: all 0.4s ease;
+}
+
+.triad:hover {
+    transform: translateY(-10px);
+    border-color: rgba(201, 168, 106, 0.5);
+}
+
+.triad i {
+    font-size: 3.5rem;
+    color: #8b4513;
+    margin-bottom: 20px;
+}
+
+.triad h3 {
+    color: #c9a86a;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background: rgba(10, 5, 0, 0.9);
+    padding: 50px 40px;
+    text-align: center;
+    border-top: 1px solid rgba(120, 90, 40, 0.3);
+}
+
+.footer-logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #c9a86a;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.footer-text {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #a09070;
+    line-height: 1.6;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(120, 90, 40, 0.2);
+    border-radius: 50%;
+    color: #c9a86a;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: rgba(201, 168, 106, 0.2);
+    transform: translateY(-5px);
+}
+
+.copyright {
+    color: #7a6a50;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background: rgba(20, 15, 10, 0.95);
+    border: 1px solid rgba(201, 168, 106, 0.5);
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 40px;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 2rem;
+    color: #c9a86a;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-modal:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.modal h2 {
+    color: #c9a86a;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.modal p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #d4c5a6;
+}
+
+.modal ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.modal li {
+    margin-bottom: 10px;
+    color: #d4c5a6;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero h2 {
+        font-size: 1.3rem;
+    }
+
+    section {
+        padding: 70px 20px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .world-card,
+    .triad,
+    .character-card {
+        min-width: 100%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Expansão das Eras — Modelo A */
+.era-card {
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.era-card.open {
+    border-color: rgba(201, 168, 106, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+}
+
+.era-expand {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+    padding: 0 25px;
+}
+
+.era-card.open .era-expand {
+    max-height: 500px;
+    /* suficiente para qualquer texto */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.close-era {
+    margin-top: 15px;
+    background: rgba(120, 90, 40, 0.2);
+    color: #c9a86a;
+    border: 1px solid rgba(120, 90, 40, 0.4);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.close-era:hover {
+    background: rgba(201, 168, 106, 0.25);
+}
+
+/* --- CARROSSEL DO MUNDO --- */
+.world-carousel-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.world-carousel {
+    display: flex;
+    gap: 30px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding: 20px 10px;
+}
+
+.world-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(20, 15, 10, 0.7);
+    border: 1px solid rgba(120, 90, 40, 0.4);
+    color: #c9a86a;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+}
+
+.world-arrow:hover {
+    background: rgba(120, 90, 40, 0.2);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.world-arrow.left {
+    left: 10px;
+}
+
+.world-arrow.right {
+    right: 10px;
+}
+
+/* Expansão das Eras — Modelo A */
+.era-card {
+    min-width: 340px;
+    max-width: 340px;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.era-card.open {
+    border-color: rgba(201, 168, 106, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+}
+
+.era-expand {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 5px;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+}
+
+.era-card.open .era-expand {
+    max-height: 500px;
+    padding: 20px 5px;
+}
+
+.close-era {
+    margin-top: 15px;
+    background: rgba(120, 90, 40, 0.2);
+    color: #c9a86a;
+    border: 1px solid rgba(120, 90, 40, 0.4);
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.close-era:hover {
+    background: rgba(201, 168, 106, 0.25);
+}
+
+/* --- CARROSSEL DE PERSONAGENS --- */
+.char-carousel-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.char-carousel {
+    display: flex;
+    gap: 30px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding: 20px 10px;
+}
+
+.char-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(20, 15, 10, 0.7);
+    border: 1px solid rgba(120, 90, 40, 0.4);
+    color: #c9a86a;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+}
+
+.char-arrow:hover {
+    background: rgba(120, 90, 40, 0.2);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.char-arrow.left {
+    left: 10px;
+}
+
+.char-arrow.right {
+    right: 10px;
+}
+
+/* --- CARD DE PERSONAGEM --- */
+.character-card {
+    min-width: 280px;
+    max-width: 280px;
+    background: rgba(15, 12, 10, 0.85);
+    border: 1px solid rgba(140, 110, 60, 0.3);
+    border-radius: 15px;
+    padding: 15px;
+    flex-shrink: 0;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(200, 170, 100, 0.4);
+}
+
+.char-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* --- EXPANSÃO DOS PERSONAGENS --- */
+.char-expand {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 5px;
+    transition: max-height 0.55s ease, padding 0.35s ease;
+}
+
+.char-card.open .char-expand {
+    max-height: 500px;
+    padding: 20px 5px;
+}
+
+.close-char {
+    margin-top: 15px;
+    background: rgba(120, 90, 40, 0.2);
+    color: #c9a86a;
+    border: 1px solid rgba(120, 90, 40, 0.4);
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.close-char:hover {
+    background: rgba(201, 168, 106, 0.25);
+}
+
+/* --- TRÍADES EXPANSÍVEIS --- */
+
+.triad-card {
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.triad-card.open {
+    border-color: rgba(201, 168, 106, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+}
+
+.triad-expand {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 5px;
+    transition: max-height 0.55s ease, padding 0.35s ease;
+}
+
+.triad-card.open .triad-expand {
+    max-height: 700px;
+    padding: 20px 10px;
+}
+
+.triad-expand h4 {
+    color: #c9a86a;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(120, 90, 40, 0.4);
+    padding-bottom: 5px;
+}
+
+.triad-expand p {
+    color: #d4c5a6;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.close-triad {
+    margin-top: 10px;
+    background: rgba(120, 90, 40, 0.2);
+    color: #c9a86a;
+    border: 1px solid rgba(120, 90, 40, 0.4);
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.close-triad:hover {
+    background: rgba(201, 168, 106, 0.25);
+}
+
+/* --- LOCAIS (Estilo igual às Tríades/Eras/Personagens) --- */
+
+.location-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    background: rgba(20, 15, 10, 0.7);
+    border-radius: 8px;
+    padding: 30px;
+    border: 1px solid rgba(120, 90, 40, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.location-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(201, 168, 106, 0.5);
+}
+
+.location-card.open {
+    border-color: rgba(201, 168, 106, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+}
+
+.location-expand {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 5px;
+    transition: max-height 0.55s ease, padding 0.35s ease;
+}
+
+.location-card.open .location-expand {
+    max-height: 600px;
+    padding: 20px 5px;
+}
+
+.location-expand p {
+    color: #d4c5a6;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.close-location {
+    margin-top: 10px;
+    background: rgba(120, 90, 40, 0.2);
+    color: #c9a86a;
+    border: 1px solid rgba(120, 90, 40, 0.4);
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.close-location:hover {
+    background: rgba(201, 168, 106, 0.25);
+}
+
+/* ===== POPUP UNIVERSAL ===== */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 5, 5, 0.85);
+  backdrop-filter: blur(6px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-overlay.active {
+  display: flex;
+}
+
+.popup-content {
+  background: rgba(20, 15, 10, 0.95);
+  border: 1px solid rgba(120, 90, 40, 0.5);
+  border-radius: 10px;
+  max-width: 800px;
+  width: 90%;
+  max-height: 85vh;
+  padding: 40px;
+  overflow-y: auto;
+  position: relative;
+  animation: popupFade 0.3s ease;
+}
+
+@keyframes popupFade {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.popup-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #c9a86a;
+  cursor: pointer;
+}
+
+.popup-close:hover {
+  color: #fff;
+}
+
+/* Remove os expands do fluxo normal */
+.era-expand,
+.char-expand,
+.triad-expand,
+.location-expand {
+  display: none;
+}
+
+/* --- CARROSSEL DE LOCAIS --- */
+.locations-carousel-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+.locations-carousel {
+    display: flex;
+    gap: 30px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding: 20px 10px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+.locations-carousel::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Opera */
+}
+
+.loc-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(20, 15, 10, 0.7);
+    border: 1px solid rgba(120, 90, 40, 0.4);
+    color: #c9a86a;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loc-arrow:hover {
+    background: rgba(120, 90, 40, 0.2);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.loc-arrow.left {
+    left: 10px;
+}
+
+.loc-arrow.right {
+    right: 10px;
+}
+
+/* --- CARD DE LOCAL (AJUSTADO PARA CARROSSEL) --- */
+.locations-carousel .location-card {
+    min-width: 320px;
+    max-width: 320px;
+    flex-shrink: 0;
+    background: rgba(20, 15, 10, 0.7);
+    border-radius: 8px;
+    padding: 25px;
+    border: 1px solid rgba(120, 90, 40, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.locations-carousel .location-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(201, 168, 106, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+}
+
+/* Ajuste responsivo para telas menores */
+@media (max-width: 768px) {
+    .locations-carousel .location-card {
+        min-width: 280px;
+        max-width: 280px;
+        padding: 20px;
+    }
+    
+    .loc-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Esconder os botões quando não houver scroll */
+.loc-arrow.hidden {
+    display: none;
+}

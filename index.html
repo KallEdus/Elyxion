@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elyxion/Projeto pessoal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Partículas no background -->
+    <div id="particles-js"></div>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">Elyxion<span>:</span> O Julgamento do Silêncio</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#world">O Mundo</a></li>
+                <li><a href="#characters">Personagens</a></li>
+                <li><a href="#triads">As Tríades</a></li>
+                <li><a href="#about">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="home" class="hero">
+        <h1 class="fade-in">Elyxion</h1>
+        <h2 class="fade-in">"Quando o Portador do Silêncio levantar sua voz, Elyxion será julgada. Por espada, por fé...
+            ou por memória."</h2>
+        <button class="cta-button fade-in" id="read-prologue">Ler o Prólogo</button>
+    </section>
+
+    <!-- Seção Sobre o Mundo -->
+    <section id="world">
+        <h2 class="section-title">O Mundo de Elyxion</h2>
+        <div class="world-carousel-wrapper">
+            <!-- Botão esquerda -->
+            <button class="world-arrow left" id="world-left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <!-- CARROSSEL -->
+            <div class="world-carousel" id="world-carousel">
+                <!-- ERA 1 -->
+                <div class="world-card era-card">
+                    <h3>Era do Vidro Partido</h3>
+                    <p>A era imediatamente anterior à Cisão, marcada por presságios silenciosos e fenômenos estranhos.
+                    </p>
+                    <div class="era-expand">
+                        <p>A Era do Vidro Partido antecede diretamente a destruição maior que assolaria Elyxion.
+                            Espelhos naturais quebravam sozinhos, reflexos mudavam, memórias surgiam em superfícies de
+                            cristal.</p>
+                        <p>Foi quando Velkhaar começou a contemplar o mundo como algo prestes a ser esquecido.</p>
+                        <button class="close-era">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- ERA 2 -->
+                <div class="world-card era-card">
+                    <h3>A Cisão</h3>
+                    <p>O evento que partiu Elyxion em fragmentos e alterou para sempre as leis do mundo.</p>
+                    <div class="era-expand">
+                        <p>A queda de Velkhaar quebrou os Códices da Realidade. Tempo, matéria e magia deixaram de
+                            obedecer regras fixas.</p>
+                        <p>Nasceram os Primeiros Vigilantes, defensores da ordem quebrada.</p>
+                        <button class="close-era">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- ERA 3 -->
+                <div class="world-card era-card">
+                    <h3>Era das Cúpulas</h3>
+                    <p>Cidades abrigadas sob grandes domos mágicos para conter o caos externo.</p>
+                    <div class="era-expand">
+                        <p>Governos militares e religiosos surgiram dentro das Cúpulas. Seu fim chegou com o Dilúvio das
+                            Estrelas Mortas, colapso simultâneo de vários domos.</p>
+                        <button class="close-era">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- ERA 4 -->
+                <div class="world-card era-card">
+                    <h3>Era do Juramento Sombrio</h3>
+                    <p>Pactos proibidos, luas negras e entidades ancestrais.</p>
+                    <div class="era-expand">
+                        <p>Três luas negras surgiram como resultado de pactos desesperados. Regiões foram dominadas
+                            pelos Arcontes Sombrios.</p>
+                        <button class="close-era">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- ERA 5 -->
+                <div class="world-card era-card">
+                    <h3>Era da Reconstrução Vermelha</h3>
+                    <p>Guerras sem fim marcaram tentativas falhas de reconstrução.</p>
+                    <div class="era-expand">
+                        <p>Cidades eram erguidas e destruídas repetidamente. O solo carmesim de Ilthar ardia com magia
+                            instável por décadas.</p>
+                        <button class="close-era">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- ERA 6 -->
+                <div class="world-card era-card">
+                    <h3>Era da Fratura Velada</h3>
+                    <p>A era atual — uma paz frágil sustentada por alianças e medo.</p>
+                    <div class="era-expand">
+                        <p>A Concordata dos Nove Reinos mantém a ordem. Mas tudo ameaça ruir com os recentes sinais e
+                            visões.</p>
+                        <button class="close-era">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- ERA 7 -->
+                <div class="world-card era-card">
+                    <h3>Era das Sombras Dialogantes</h3>
+                    <p>A era que alguns acreditam estar começando agora.</p>
+                    <div class="era-expand">
+                        <p>Profecias falam. Sombras respondem. Memórias caminham. Um prelúdio direto dos eventos
+                            envolvendo Lyea.</p>
+                        <button class="close-era">Fechar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão direita -->
+            <button class="world-arrow right" id="world-right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Seção Personagens -->
+    <section id="characters">
+        <h2 class="section-title">Personagens Principais</h2>
+        <div class="char-carousel-wrapper">
+            <!-- SETA ESQUERDA -->
+            <button class="char-arrow left" id="char-left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <!-- CARROSSEL -->
+            <div class="char-carousel" id="char-carousel">
+                <!-- KAEL -->
+                <div class="character-card char-card">
+                    <h3>Kael Ardyn</h3>
+                    <h4>Espadachim do Fluxo</h4>
+                    <p>Marcado por ecos do Coração de Elyxion, Kael luta contra visões e destinos que não escolheu.</p>
+                    <div class="char-expand">
+                        <p>Kael é um dos raros portadores do Fluxo Primal — uma energia instável surgida após a Cisão.
+                            Suas visões revelam futuros possíveis, mas nunca o mostram morrendo. Dizem que isso não é um
+                            sinal de proteção… mas de condenação.</p>
+                        <p>Sua conexão com Lyea e Elenna determinará o rumo deste mundo quebrado.</p>
+                        <button class="close-char">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- ELENNA -->
+                <div class="character-card char-card">
+                    <h3>Elenna Vharis</h3>
+                    <h4>Arqueira das Tramas</h4>
+                    <p>Inteligente e feroz, carrega um passado apagado pela magia da Tríade.</p>
+                    <div class="char-expand">
+                        <p>Elenna arcou com o apagamento de memórias proibidas em sua infância. Agora, fragmentos
+                            retornam — sonhos, vozes e símbolos que ela não deveria lembrar.</p>
+                        <p>Sua percepção mágica permite "ler" linhas narrativas da realidade, como se o mundo fosse um
+                            tecido vivo.</p>
+                        <button class="close-char">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- L Y E A -->
+                <div class="character-card char-card">
+                    <h3>Lyea</h3>
+                    <h4>A Ruptura Viva</h4>
+                    <p>Uma existência que não deveria ser possível. É o epicentro das forças que desperta nas Sombras
+                        Dialogantes.</p>
+                    <div class="char-expand">
+                        <p>Lyea é uma remanescente de um ciclo anterior à própria Cisão. Seu corpo é uma fratura viva —
+                            ecos do julgamento final do mundo.</p>
+                        <p>Quando dorme, suas sombras caminham. Quando fala, realidades tremem. E quando encontrar o
+                            Coração novamente… Elyxion decidirá seu futuro.</p>
+                        <button class="close-char">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- AEYEN -->
+                <div class="character-card char-card">
+                    <h3>Aeyen Solhmar</h3>
+                    <h4>Guardião das Marcas</h4>
+                    <p>Um paladino silencioso, devoto a Nahalia, condenado a carregar memórias que não são suas.</p>
+                    <div class="char-expand">
+                        <p>Aeyen possui uma marca de alma dupla — registro de vidas passadas que colidem nele. Isso o
+                            torna imprevisível, instável… e um dos mais importantes guardiões da verdade.</p>
+                        <p>Alguns dizem que suas memórias ecoam de eras antes da Cisão.</p>
+                        <button class="close-char">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- VEYRA -->
+                <div class="character-card char-card">
+                    <h3>Veyra Lysanth</h3>
+                    <h4>Maga da Aurora</h4>
+                    <p>Herdeira das Luzes Partidas. Uma estudiosa que nunca deveria ter lido os códices fragmentados.
+                    </p>
+                    <div class="char-expand">
+                        <p>Veyra é uma das únicas capazes de manipular magia de reconstrução — resquícios dos antigos
+                            Códices da Realidade.</p>
+                        <p>Mas cada feitiço que ela lança enfraquece sua ligação com sua própria existência.</p>
+                        <button class="close-char">Fechar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SETA DIREITA -->
+            <button class="char-arrow right" id="char-right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Seção Tríades -->
+    <section id="triads">
+        <h2 class="section-title">As Tríades Primordiais</h2>
+        <div class="triads-container">
+            <!-- A ORDEM -->
+            <div class="triad triad-card">
+                <i class="fas fa-crown"></i>
+                <h3>A Ordem</h3>
+                <p>A Tríade da Ordem molda civilizações através de disciplina, estrutura e hierarquia.</p>
+                <div class="triad-expand">
+                    <i class="fas fa-crown"></i>
+                    <h4>Divindades da Ordem</h4>
+                    <p><strong>Auren'Val — O Legislador Celeste</strong><br>
+                        Deus das Leis Fundamentais, da estrutura e da justiça absoluta. Simboliza estabilidade, governo,
+                        disciplina e destino inflexível. Povos afiliados: Impérios centralizados, cidades muradas,
+                        guardiões da lei, academias de juízes arcanos.</p>
+
+                    <p><strong>Ilzaria — A Voz Imutável</strong><br>
+                        Deusa do Dogma, do Julgamento e da Memória Regulada. Simboliza controle do conhecimento,
+                        preservação seletiva e obediência. Povos afiliados: Oradores-sagrados, escribas-mor, templos que
+                        controlam bibliotecas e arquivos.</p>
+
+                    <p><strong>Veyran — A Lâmina Consagrada</strong><br>
+                        Deus da Guarda Sagrada, da guerra ordenada e da disciplina militar. Simboliza proteção rígida,
+                        fé marcial e devoção inabalável. Povos afiliados: Ordens militares, paladinos, exércitos
+                        disciplinados, cidades-fortaleza.</p>
+                    <button class="close-triad">Fechar</button>
+                </div>
+            </div>
+
+            <!-- O EQUILÍBRIO -->
+            <div class="triad triad-card">
+                <i class="fas fa-balance-scale"></i>
+                <h3>O Equilíbrio</h3>
+                <p>A Tríade do Equilíbrio governa ciclos de vida, morte e renascimento.</p>
+                <div class="triad-expand">
+                    <h4>Divindades do Equilíbrio</h4>
+                    <p><strong>Nahalia — A Guardiã dos Ciclos</strong><br>
+                        Deusa da vida, do renascimento e do fluxo natural. Simboliza cura, equilíbrio espiritual e
+                        destino harmônico. Povos afiliados: Druidas, monges, sanadores, povos das florestas e nômades
+                        espirituais.</p>
+
+                    <p><strong>Tor'Murad — O Portador da Morte Serena</strong><br>
+                        Deus da morte pacífica, do descanso final e do retorno à essência. Simboliza serenidade,
+                        desapego e justiça natural. Povos afiliados: Ordem dos Veios Antigos, protetores de cemitérios,
+                        magos da alma.</p>
+
+                    <p><strong>Lumyreth — O Guardião dos Ecos</strong><br>
+                        Deus das memórias vivas, do destino fluido e das possibilidades. Simboliza sabedoria intuitiva,
+                        escolhas e multiplicidade. Povos afiliados: Oráculos, bardos sacerdotais, clãs do deserto,
+                        estudiosos do tempo.</p>
+                    <button class="close-triad">Fechar</button>
+                </div>
+            </div>
+
+            <!-- O CAOS -->
+            <div class="triad triad-card">
+                <i class="fas fa-fire"></i>
+                <h3>O Caos</h3>
+                <p>A Tríade do Caos busca mudança extrema, ruptura e liberdade absoluta.</p>
+                <div class="triad-expand">
+                    <h4>Divindades do Caos</h4>
+                    <p><strong>Zhor'Kal — O Devorador de Vozes</strong><br>
+                        Deus da ruína, da fome eterna e da quebra dos pactos. Simboliza destruição inevitável,
+                        silenciamento e apetite por poder. Povos afiliados: Seitas clandestinas, profetas famintos,
+                        tribos abandonadas ao desespero.</p>
+
+                    <p><strong>Mynza — A Serpente da Muda-Pele</strong><br>
+                        Deusa da metamorfose, do acaso e do destino instável. Simboliza mudança contínua, trapaça divina
+                        e evolução abrupta. Povos afiliados: Cultos itinerantes, ladrões místicos, povos de fronteira.
+                    </p>
+
+                    <p><strong>Skaaroth — O Grito Inominável</strong><br>
+                        Deus da liberdade selvagem, das paixões extremas e da fúria do vazio. Simboliza impulso puro,
+                        rebelião e energia bruta. Povos afiliados: Guerreiros berserker, tribos montanhosas, seguidores
+                        do caos elemental.</p>
+                    <button class="close-triad">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Locais -->
+    <section id="locations">
+        <h2 class="section-title">Cidades e Locais Importantes de Elyxion</h2>
+        <div class="locations-carousel-wrapper">
+            <!-- Botão esquerda -->
+            <button class="loc-arrow left" id="loc-left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <!-- CARROSSEL -->
+            <div class="locations-carousel" id="locations-carousel">
+                <!-- 1. VIRELYA -->
+                <div class="location-card">
+                    <h3>Virelya — A Cidade da Concordata</h3>
+                    <p>Coração político do presente, onde os nove reinos negociam uma paz frágil.</p>
+                    <div class="location-expand">
+                        <p>Virelya é o centro diplomático de Elyxion. Suas torres douradas abrigam representantes de
+                            todas as nações, e suas ruas são vigiadas por guardas neutros chamados Muralhas Silentes.
+                        </p>
+                        <p>É a cidade onde rumores das Sombras Dialogantes surgiram pela primeira vez, e o palco de
+                            tensões que ameaçam quebrar a Concordata.</p>
+                        <p><strong>Povos:</strong> diplomatas, estudiosos, comerciantes, emissários das Tríades.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 2. ALVARION -->
+                <div class="location-card">
+                    <h3>Alvarion — O Reino à Beira da Guerra Civil</h3>
+                    <p>Dividida entre duas facções: a Ordem Tradicional e os Novos Juristas.</p>
+                    <div class="location-expand">
+                        <p>Alvarion é estratégica para a Concordata. Suas decisões podem iniciar uma guerra ou sustentar
+                            a paz.</p>
+                        <p>As Casas Altas disputam controle há anos — agora, o conflito ameaça virar batalha aberta.</p>
+                        <p><strong>Povos:</strong> nobres militares, juristas, políticos, mercenários de elite.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 3. ILTHAR -->
+                <div class="location-card">
+                    <h3>Ilthar — A Cidade Vermelha</h3>
+                    <p>Solo queimado por magia residual desde a Reconstrução Vermelha.</p>
+                    <div class="location-expand">
+                        <p>Ilthar foi o berço de guerras devastadoras. Seu solo ainda arde com fissuras mágicas
+                            imprevisíveis.</p>
+                        <p>Apesar disso, prospera como centro bélico e tecnológico.</p>
+                        <p><strong>Povos:</strong> guerreiros, arcanistas de guerra, engenheiros mágicos.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 4. SOLHMAR -->
+                <div class="location-card">
+                    <h3>Solhmar — Terra dos Guardiões da Alma</h3>
+                    <p>Local sagrado regido pelos seguidores de Nahalia e Tor'Murad.</p>
+                    <div class="location-expand">
+                        <p>Solhmar é conhecida por seus templos tranquilos e suas pontes de pedra que ecoam memórias ao
+                            tocar.</p>
+                        <p>Aeyen nasceu e treinou aqui, onde almas e destinos convergem.</p>
+                        <p><strong>Povos:</strong> monges, paladinos, guardiões espirituais.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 5. VELHARYS -->
+                <div class="location-card">
+                    <h3>Velharys — A Cidade do Dogma Imutável</h3>
+                    <p>Lar dos templos mais rígidos da Ordem, onde conhecimento é controlado.</p>
+                    <div class="location-expand">
+                        <p>Velharys possui bibliotecas seladas, onde apenas sacerdotes de Ilzaria têm acesso.</p>
+                        <p>Decisões de Velharys moldam leis em várias nações.</p>
+                        <p><strong>Povos:</strong> sacerdotes, escribas, juízes rúnicos.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 6. MYRIATH (DESTRUÍDA) -->
+                <div class="location-card">
+                    <h3>Myriath — A Cratera do Tempo Parado</h3>
+                    <p>Antiga capital das Bibliotecas Eternas, destruída na Cisão.</p>
+                    <div class="location-expand">
+                        <p>Myriath foi apagada em uma explosão de luz roxa que congelou o tempo em camadas quebradas.
+                        </p>
+                        <p>Hoje, apenas sombras memoriais caminham por suas ruínas.</p>
+                        <p><strong>Povos:</strong> nenhum. Apenas ecos.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 7. LYSANTH -->
+                <div class="location-card">
+                    <h3>Lysanth — A Cidade da Aurora</h3>
+                    <p>Uma cidade iluminada por veios mágicos que reagem ao amanhecer.</p>
+                    <div class="location-expand">
+                        <p>Lysanth é conhecida pela magia de reconstrução e por seus cristais de luz partida.</p>
+                        <p>É a cidade natal de Veyra Lysanth.</p>
+                        <p><strong>Povos:</strong> magos da luz, artesãos arcanos, estudiosos da Ordem e do Equilíbrio.
+                        </p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 8. EKRION -->
+                <div class="location-card">
+                    <h3>Ekrion — Cidade Fronteiriça das Fraturas</h3>
+                    <p>Lar de fendas instáveis que revelam memórias de eras passadas.</p>
+                    <div class="location-expand">
+                        <p>Ekrion vive entre a ordem e o caos, onde realidades se sobrepõem.</p>
+                        <p>Exploradores arriscam-se para estudar seus fenômenos.</p>
+                        <p><strong>Povos:</strong> caçadores de ruínas, magos instáveis, nômades.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 9. FYNROS -->
+                <div class="location-card">
+                    <h3>Fynros — Capital das Montanhas Eclípticas</h3>
+                    <p>Fortaleza natural entre picos corrompidos e cavernas brilhantes.</p>
+                    <div class="location-expand">
+                        <p>Fynros resiste ao avanço da corrupção que se espalha pelas montanhas.</p>
+                        <p>É um dos pontos do Capítulo 3 a sofrer manifestações do Caos.</p>
+                        <p><strong>Povos:</strong> mineradores, guerreiros montanheses, outriders.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 10. CARTHIS -->
+                <div class="location-card">
+                    <h3>Carthis — Porto das Marés Harmoniosas</h3>
+                    <p>Cidade costeira protegida por monges do Equilíbrio.</p>
+                    <div class="location-expand">
+                        <p>Sua economia gira em torno de comércio marítimo e rituais de purificação das águas.</p>
+                        <p>É um ponto seguro entre reinos que se odeiam.</p>
+                        <p><strong>Povos:</strong> pescadores, monges, barqueiros espirituais.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 11. VAEL'TOR -->
+                <div class="location-card">
+                    <h3>Vael'Tor — A Cidade Subterrânea das Eco-Memórias</h3>
+                    <p>Escavada em cristais que registram sons de quem passa.</p>
+                    <div class="location-expand">
+                        <p>Vael'Tor é conhecida por seus salões que respondem com ecos inteligentes.</p>
+                        <p>Alguns acreditam que o próprio Lumyreth fala por meio das paredes.</p>
+                        <p><strong>Povos:</strong> eco-mestres, mineradores, oráculos subterrâneos.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 12. ASH'DOREI -->
+                <div class="location-card">
+                    <h3>Ash'Dorei — Cidade das Runas Vivas</h3>
+                    <p>Local onde surgiram os Primeiros Vigilantes.</p>
+                    <div class="location-expand">
+                        <p>Runas vivas percorrem suas paredes, registrando acontecimentos importantes.</p>
+                        <p>Seus sacerdotes acreditam que o mundo tenta se lembrar de si mesmo ali.</p>
+                        <p><strong>Povos:</strong> vigilantes, rúnicos, guardiões da história.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 13. CORAÇÃO DE ELYXION -->
+                <div class="location-card">
+                    <h3>Coração de Elyxion — O Núcleo Vivo</h3>
+                    <p>O centro do mundo, onde realidades se cruzam.</p>
+                    <div class="location-expand">
+                        <p>O Coração pulsa como se fosse vivo. Ecos de mundos anteriores surgem em seu cristal central.
+                        </p>
+                        <p>Lyea possui conexão direta com ele.</p>
+                        <p><strong>Povos:</strong> nenhum. Apenas manifestações temporais.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 14. PLANÍCIES DE ETHERATH -->
+                <div class="location-card">
+                    <h3>Planícies de Etherath</h3>
+                    <p>Campos onde memórias caminham e sombras falam.</p>
+                    <div class="location-expand">
+                        <p>Etherath é lar de fenômenos onde lembranças se manifestam como figuras físicas.</p>
+                        <p>Muitos acreditam que as Sombras Dialogantes começaram aqui.</p>
+                        <p><strong>Povos:</strong> andarilhos, estudiosos, nômades do vento.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 15. MONTANHAS ECLÍPTICAS -->
+                <div class="location-card">
+                    <h3>Montanhas Eclípticas</h3>
+                    <p>Região corrompida, palco de eventos do Capítulo 3.</p>
+                    <div class="location-expand">
+                        <p>As montanhas carregam energia residual do Caos, criando criaturas distorcidas.</p>
+                        <p>O trio Kael, Elenna e Lyea visita esta região no Capítulo 3.</p>
+                        <p><strong>Povos:</strong> outriders, caçadores, mineiros de risco.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 16. TEMPLO CAÍDO DE VELKHAAR -->
+                <div class="location-card">
+                    <h3>Templo Caído de Velkhaar</h3>
+                    <p>Onde o Deus-Ômega desapareceu.</p>
+                    <div class="location-expand">
+                        <p>O templo flutuava, mas caiu como um meteoro quando Velkhaar se silenciou.</p>
+                        <p>É considerado tabu pela Tríade da Ordem.</p>
+                        <p><strong>Povos:</strong> cultistas secretos, exploradores, estudiosos do ômega.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 17. LAGO DAS TRÊS SOMBRAS -->
+                <div class="location-card">
+                    <h3>Lago das Três Sombras</h3>
+                    <p>Onde as Três Luas Negras apareceram pela primeira vez.</p>
+                    <div class="location-expand">
+                        <p>Suas águas refletem eventos que ainda não aconteceram.</p>
+                        <p>É um ponto sagrado para seitas da Muda-Pele.</p>
+                        <p><strong>Povos:</strong> cultos do caos, pescadores, andarilhos.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 18. VALE DE NAHALIA -->
+                <div class="location-card">
+                    <h3>Vale de Nahalia</h3>
+                    <p>Santuário natural da vida e dos ciclos.</p>
+                    <div class="location-expand">
+                        <p>O vale floresce em qualquer estação. Seus rios pulsam com energia vital.</p>
+                        <p>Monges e druidas realizam rituais de cura e renascimento.</p>
+                        <p><strong>Povos:</strong> druidas, curandeiros, povos do Equilíbrio.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 19. DESFILADEIRO DE ZHOR'KAL -->
+                <div class="location-card">
+                    <h3>Desfiladeiro de Zhor'Kal</h3>
+                    <p>Epicentro das seitas devoradoras de voz.</p>
+                    <div class="location-expand">
+                        <p>O vento que sopra entre suas pedras parece murmurar orações proibidas.</p>
+                        <p>Muitos que entram não saem ou voltam mudos.</p>
+                        <p><strong>Povos:</strong> cultistas, andarilhos do caos, pastores de sombra.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 20. ARCO DE LUMYRETH -->
+                <div class="location-card">
+                    <h3>Arco de Lumyreth</h3>
+                    <p>Um portal natural entrelaçado com destinos possíveis.</p>
+                    <div class="location-expand">
+                        <p>Quem passa pelo arco enxerga fragmentos de vidas alternativas.</p>
+                        <p>Oráculos e bardos fazem peregrinações anuais.</p>
+                        <p><strong>Povos:</strong> oráculos, bardos, estudiosos do destino.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+
+                <!-- 21. JARDINS SILENCIOSOS DE ILZARIA -->
+                <div class="location-card">
+                    <h3>Jardins Silenciosos de Ilzaria</h3>
+                    <p>Onde memórias são apagadas voluntariamente.</p>
+                    <div class="location-expand">
+                        <p>Os jardins são famosos por florescerem mesmo sem luz solar.</p>
+                        <p>Sacerdotes realizam rituais de esquecimento — mas isso tem preço.</p>
+                        <p><strong>Povos:</strong> sacerdotes, peregrinos do esquecimento, estudiosos da mente.</p>
+                        <button class="close-location">Fechar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão direita -->
+            <button class="loc-arrow right" id="loc-right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="about">
+        <div class="footer-logo">Elyxion</div>
+        <p class="footer-text">Um mundo forjado pela cicatriz da ruína, onde a memória do que se perdeu ancora esperança
+            — ou ódio. Explore as profundezas deste universo de fantasia sombria onde heróis se tornam mitos e mitos
+            retornam para pedir vingança.</p>
+        <div class="social-icons">
+            <a href="https://web.whatsapp.com/send?phone=5591981239341" target="_blank"><i
+                    class="fab fa-whatsapp"></i></a>
+            <a href="https://discord.com/users/kallesus" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://youtube.com/@karlossousa3832?si=YhTijeoJDzZhienj" target="_blank"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/kall_edus/#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="copyright">&copy; 2025 Elyxion: O Julgamento do Silêncio. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Modal para o Prólogo -->
+    <div class="modal" id="prologue-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>PRÓLOGO: ECOS DE UMA ERA PERDIDA</h2>
+            <p><em>"Elyxion não foi forjada pela paz, mas pela cicatriz da ruína. E é na memória do que se perdeu que o
+                    mundo ancora sua esperança — ou seu ódio."</em></p>
+            <p><strong>— O Silêncio Após o Fim —</strong></p>
+            <p>Milhares de anos antes do presente, quando os céus ainda eram trincheiras de luz entre os Deuses, e os
+                continentes dançavam como colossos instáveis sobre os oceanos primordiais, o mundo conheceu sua primeira
+                ruína. Chamaram-na de A Cisão, e dizem os pergaminhos antigos que ela não foi causada por uma guerra
+                entre povos — mas entre ideias.</p>
+            <p>Três pilares sustentavam o firmamento: A Ordem, O Equilíbrio e O Caos — filhos diretos dos Primordiais,
+                moldados pelas vontades de forças incompreensíveis.</p>
+            <ul>
+                <li>A Triade da Ordem desejava a unificação, o domínio absoluto das leis celestes sobre o
+                    livre-arbítrio.</li>
+                <li>A Triade do Equilíbrio acreditava no ciclo eterno de renovação — vida, morte e renascimento.</li>
+                <li>A Triade do Caos ansiava por quebra, liberdade absoluta, evolução por meio da destruição.</li>
+            </ul>
+            <p>Cada Triade erguia civilizações, moldava doutrinas e inspirava reis e tiranos. No entanto, como todo
+                sistema fechado, a tensão aumentou até transbordar.</p>
+            <p>Acima desses pilares existia Velkhaar, o Deus-Ômega. Dizem que contemplou o destino e enlouqueceu. Ou
+                talvez tenha se iluminado. Alguns o consideram traidor, outros um mártir, afinal, em uma noite onde
+                todas as estrelas se apagaram por um breve instante, Velkhaar desapareceu, sem deixar rastros, ou talvez
+                só não tenha sobrado um.</p>
+            <p>Em sua queda, a terra se partiu em mil fragmentos. O panteão se desequilibrou. Deuses entraram em
+                conflito. Portais colapsaram.</p>
+            <p>Seu templo, que flutuava sobre o mar dos ventos eternos, caiu do céu como um cometa fúnebre. É dito que
+                os seus sacerdotes e devotos, os quais estavam na ilha, não lutaram contra seu fim, não se deram ao
+                trabalho. Uma de suas doutrinas é que tudo está fadado ao fim, e eles não eram diferentes, e por isso,
+                nada fizeram. Fanáticos, de fato.</p>
+            <p>O continente de Myriath, lar das Bibliotecas Eternas e dos Sábios-Sentinelas, sumiu em uma explosão de
+                luz roxa, deixando atrás de si uma cratera onde o tempo parece não se mover.</p>
+            <p><strong>— As Eras Quebradas —</strong></p>
+            <p>Três grandes eras vieram após A Cisão. Cada uma marcada por falsos renascimentos e esperanças
+                assassinadas...</p>
+        </div>
+    </div>
+
+    <!-- Modal Universal (ADICIONADO NO FINAL DO BODY) -->
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup-content" id="popup-content">
+            <button class="popup-close" id="popup-close">✕</button>
+            <div id="popup-body"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
