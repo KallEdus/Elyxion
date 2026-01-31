@@ -1,16 +1,16 @@
-# 🏰 Elyxion: O Julgamento do Silêncio
+Elyxion: O Julgamento do Silêncio
 
 Um site interativo e imersivo para explorar o universo de fantasia sombria de Elyxion, um mundo fragmentado por uma ruína cósmica onde memórias caminham e sombras falam.
 
-## 🌟 Características Principais
+## Características Principais
 
-### ✨ Interface Imersiva
+### Interface Imersiva
 - **Partículas animadas** no background para atmosfera mística
 - **Design responsivo** que se adapta a todos os dispositivos
 - **Paleta de cores temática** (dourado, marrom, preto) para fantasia sombria
 - **Animações suaves** e transições elegantes
 
-### 🎭 Seções Interativas
+### Seções Interativas
 1. **Hero Section** com efeito de digitação no título
 2. **Carrossel de Eras** - Explore as 7 eras da história de Elyxion
 3. **Carrossel de Personagens** - Conheça os protagonistas e suas histórias
@@ -19,7 +19,7 @@ Um site interativo e imersivo para explorar o universo de fantasia sombria de El
 6. **Modal do Prólogo** - Leia a história inicial do universo
 7. **Popup Universal** - Sistema elegante para expandir conteúdos
 
-### 🛠️ Tecnologias Utilizadas
+### Tecnologias Utilizadas
 - **HTML5** semântico e acessível
 - **CSS3** com Flexbox, Grid e animações CSS
 - **JavaScript** Vanilla (sem bibliotecas pesadas)
@@ -27,7 +27,7 @@ Um site interativo e imersivo para explorar o universo de fantasia sombria de El
 - **Font Awesome** para ícones
 - **Google Fonts** (Segoe UI como padrão)
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 elyxion-website/
@@ -43,7 +43,7 @@ elyxion-website/
 └── README.md           # Este arquivo
 ```
 
-## 🚀 Como Usar
+## Como Usar
 
 ### Instalação Local
 1. Clone ou baixe os arquivos do projeto
@@ -71,7 +71,7 @@ elyxion-website/
 </div>
 ```
 
-## 🔧 Funcionalidades JavaScript
+## Funcionalidades JavaScript
 
 ### Sistema de Popup Universal
 ```javascript
@@ -94,7 +94,7 @@ activatePopup(".location-card", ".location-expand");
 - **Navegação suave** entre seções
 - **Hover effects** em todos os elementos interativos
 
-## 🎨 Customização CSS
+## Customização CSS
 
 ### Cores Principais
 ```css
@@ -114,7 +114,7 @@ activatePopup(".location-card", ".location-expand");
 /* Mobile: < 768px */
 ```
 
-## 📱 Responsividade
+## Responsividade
 
 O site é totalmente responsivo com:
 - **Layout flexível** para desktop
@@ -123,7 +123,7 @@ O site é totalmente responsivo com:
 - **Tipografia adaptativa**
 - **Toque-friendly** para dispositivos móveis
 
-## 🌐 Integrações Externas
+## Integrações Externas
 
 ### CDNs Utilizadas
 ```html
@@ -140,7 +140,7 @@ O site é totalmente responsivo com:
 - YouTube
 - Instagram
 
-## 🐛 Solução de Problemas
+## Solução de Problemas
 
 ### Problemas Comuns
 1. **Partículas não aparecem**
@@ -161,13 +161,13 @@ Pressione `F12` para:
 - Inspecionar elementos no Elements
 - Testar responsividade no Device Toolbar
 
-## 📄 Licença
+## Licença
 
 © 2025 Elyxion: O Julgamento do Silêncio. Todos os direitos reservados.
 
 Este projeto é para fins demonstrativos e de portfólio. As imagens utilizadas são de fontes públicas (Imgur, Unsplash) e os textos são criação original.
 
-## 🤝 Contribuindo
+## Contribuindo
 
 Para contribuir com este projeto:
 1. Faça um Fork do repositório
@@ -176,7 +176,7 @@ Para contribuir com este projeto:
 4. Push para a branch (`git push origin feature/AmazingFeature`)
 5. Abra um Pull Request
 
-## 📞 Contato
+## Contato
 
 - **Discord:** @kallesus
 - **WhatsApp:** +55 91 98123-9341
